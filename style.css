@@ -762,3 +762,12 @@ input {
         justify-content: space-evenly;
     }
 }
+
+@media screen and (min-width: 1700px) {
+    body {
+        width:80%;
+        margin: auto;
+        border-left: 1px solid hsl(218, 28%, 13%);
+        border-right: 1px solid hsl(218, 28%, 13%);
+    }
+}
