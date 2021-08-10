@@ -26,12 +26,23 @@ p, a,span {
 .nav-link {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
-    padding-left: 2.50em;
+    margin-left: 2.50em;
 }
 .nav-link:hover {
     transition: opacity ease 0.20s, text-decoration ease 0.50s;
     opacity: 1;
     text-decoration: underline;
+}
+.sing-in-link {
+    border: 1px solid hsl(176, 68%, 64%);
+    border-radius: 4rem;
+    padding: 0.30em 0.80em 0.30em 0.80em;
+    opacity: 1;
+    
+}
+.sing-in-link:hover {
+    text-decoration: none;
+    background-image: linear-gradient(to right, hsl(184, 49%, 70%), hsl(184, 49%, 70%));
 }
 #main-header {
     padding: 2em 10em 15em 10em;
@@ -66,6 +77,13 @@ p, a,span {
     width: 70%;
     margin: auto; 
     padding: 1em 0 1em 0;
+}
+.button-link {
+    opacity: 1;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25em;
 }
 .header-button, .submit-button {
     width: 33%;
@@ -224,6 +242,9 @@ input {
     border: none;
     border-radius: 4rem;
 }
+::placeholder {
+    color: hsl(0, 0%, 73%);
+}
 .submit-button {
     width: 30%;
     margin-left: 2%;
@@ -313,6 +334,12 @@ input {
     #main-navbar {
         width: 100vw;
         padding: 2em 1.50em 2em 1.50em;
+    }
+    .nav-link {
+        margin-left: 0;
+    }
+    .sing-in-link {
+        margin-left: 0.20em;
     }
     .logo-container {
         width: 25%;
