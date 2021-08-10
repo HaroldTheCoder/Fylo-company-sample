@@ -1,0 +1,449 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+  
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 28%, 15%);
+}
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
+p, a,span {
+    opacity: 0.7;
+    font-weight: 400;
+}
+#main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    padding: 3em 3.50em 0 3.50em;
+}
+.nav-link {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding-left: 2.50em;
+}
+.nav-link:hover {
+    transition: opacity ease 0.20s, text-decoration ease 0.50s;
+    opacity: 1;
+    text-decoration: underline;
+}
+#main-header {
+    padding: 2em 10em 15em 10em;
+    text-align: center;
+    background: url(images/bg-curvy-desktop.svg) no-repeat bottom center;
+    background-position: cover;
+    background-size: 100vw;
+}
+.header-img-container {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: center center;
+}
+.header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.header-content {
+    width: 75%;
+    margin: auto;
+    padding: 2em;
+}
+.header-content h1 {
+    font-size: 2.20em;
+    margin: auto;
+    padding: 0.50em;
+}
+.header-content p {
+    width: 70%;
+    margin: auto; 
+    padding: 1em 0 1em 0;
+}
+.header-button, .submit-button {
+    width: 33%;
+    padding: 1em;
+    border: none;
+    border-radius: 4rem;
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%) ,hsl(198, 60%, 50%));
+    cursor: pointer;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+.header-button::before, .submit-button::before {
+    position: absolute;
+    content: "";
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    background-image: linear-gradient(to right, hsl(184, 49%, 70%), hsl(184, 49%, 70%));
+    z-index: -1;
+    border-radius: 4rem;
+    transition: opacity ease 0.40s;
+    opacity: 0;
+
+}
+.header-button:hover::before, .submit-button:hover::before {
+    opacity: 1;
+     
+}
+#main-content {
+    background-color: hsl(218, 28%, 13%);
+}
+.section-1 {
+    display: grid;
+    grid-template-areas: "tile-1 tile-2"
+                           "tile-3 tile-4";
+    gap: 3em;
+    padding: 3em 5em 3em 5em;
+}
+.tile-1 {grid-area: tile-1;} .tile-2 {grid-area: tile-2;}
+.tile-3 {grid-area: tile-3;} .tile-4 {grid-area: tile-4;}
+.box {
+    text-align: center;
+}
+.box h2 {
+    padding: 1em 0 1em 0;
+}
+.box p{
+    width: 65%;
+    margin: auto;
+}
+.section-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row;
+    padding: 5em;
+}
+.img-section-container-left {
+    padding-right: 2em;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.section-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.section-content-right {
+    padding-left: 2em;
+}
+.section-content-right h1 {
+    font-size: 2em;
+    padding: 0 1em 1em 0;
+}
+.section-content-right p {
+    padding-bottom: 1em;
+}
+.section-link, .link {
+    opacity: 1;
+    color: hsl(176, 68%, 64%);
+    vertical-align: middle;
+}
+.section-link a:hover {
+    transition: color ease 0.20s;
+    opacity: 1;
+    color: hsl(0, 0%, 100%);
+}
+.arrow-img {
+   
+}
+.testimonial-section {
+    padding: 4em;
+}
+.testimonial-wrapper {
+    padding: 2em 0 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    background: url(images/bg-quotes.png) no-repeat left top;
+}
+.testimonial-box {
+    margin: 0 1% 0 1%;
+    padding: 2em;
+    background-color: hsl(219, 30%, 18%);
+}
+.testimonial-box p:nth-child(1){
+    padding-bottom: 1em;
+}
+.profile-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row;
+    padding-top: 1em;
+}
+.profile-img {
+    width: 12%;
+    border-radius: 50%;
+    display: inline;
+}
+.profile-name {
+    padding-left: 1em;
+}
+.profile-name h3 {
+    font-size: 1em;
+}
+.profile-name p {
+    font-size: 0.80em;
+}
+.section-3 {
+    position: relative;
+    padding: 4em;
+    width: 70%;
+    margin: auto;
+}
+.sign-up-box {
+    text-align: center;
+    padding: 3em 4em 3em 4em;
+    background-color: hsl(217, 28%, 15%);
+    margin-bottom: -16%;
+    box-shadow: 5px 5px 7px hsla(217, 52%, 5%, 0.322);
+}
+.sign-up-box h2 {
+    font-size: 2em;
+}
+.sign-up-box p {
+    padding: 1em;
+}
+form {
+    text-align: left;
+}
+input {
+    padding: 1em ;
+    width: 65%;
+    border: none;
+    border-radius: 4rem;
+}
+.submit-button {
+    width: 30%;
+    margin-left: 2%;
+}
+#main-footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 10em 5em 5em 5em;
+}
+.sub-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row;
+    padding-top: 3em;
+}
+.fab, .fas {
+    color: hsl(0, 0%, 100%);
+    opacity: 1;
+}
+.logo-bottom-container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+}
+.logo-bottom {
+    width: 10%;
+    height: auto;
+    display: block;
+}
+.location {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-flow: row;
+}
+.fa-map-marker-alt, .fa-phone-alt, .fa-envelope {
+   margin-right: 1em;
+   color: hsl(0, 0%, 100%); 
+   opacity: 1;
+}
+.info div {
+    padding-bottom: 1em;
+}
+.bottom-links {
+    display: block;
+    padding-bottom: 1em;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+.bottom-links:hover {
+    font-weight: 700;
+    opacity: 1;
+}
+.social-link-circle {
+    width: 10%;
+    height: 100px;
+    display: inline;
+}
+.social-media-row {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+}
+.social-link{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0.50em 0.70em 0.50em 0.70em;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+    opacity: 1;
+    font-size: 1em;
+}
+.link-1 {
+    padding: 0.50em 0.80em 0.50em 0.80em;
+}
+.social-link:hover {
+    color: hsl(176, 68%, 64%);
+    border: 1px solid hsl(176, 68%, 64%);
+}
+
+@media screen and (min-width: 375px) and (max-width: 390px){
+    #main-navbar {
+        width: 100vw;
+        padding: 2em 1.50em 2em 1.50em;
+    }
+    .logo-container {
+        width: 25%;
+    }
+    .logo {
+        width: 100%;
+    }
+    .nav-link {
+        padding-left: 1em;
+        font-size: 0.90em;
+    }
+    #main-header {
+        padding: 2em;
+    }
+    .header-content {
+        width: 100%;
+        padding: 0;
+    }
+    .header-img-container {
+        width: 100%;
+    }
+    .header-content h1 {
+        font-size: 1.50em;
+        padding: 1em 0;
+        line-height: 1.50em;
+    }
+    .header-content p {
+        width: 100%;
+        padding: 0 0 2.50em 0;
+    }
+    .header-button {
+        width: 80%; 
+        padding: 1.30em;
+    }
+    .section-1 {
+        grid-template-areas: "tile-1"
+                                "tile-2"
+                                "tile-3"
+                                "tile-4";
+        gap: 8em;
+        padding: 10em 2em 5em 2em;
+    }
+    .box p{
+     width: 100%;
+    }
+    .box h2 {
+    padding: 2em 0 1em 0;
+    font-size: 1.30em;
+    }
+    .section-2 {
+        flex-flow: column;
+        padding: 5em 2em 5em 2em;
+    }
+
+    .img-section-container-left {
+        padding-right: 0;
+    }
+    .section-content-right {
+        padding: 3em 0 0 0;
+    }
+    .section-content-right h1 {
+        font-size: 1.20em;
+        padding: 0 0 1em 0;
+    }
+    .testimonial-wrapper {
+        flex-flow: column;
+    }
+    .testimonial-section {
+        padding: 4em 2em 4em 2em;
+    }
+    .testimonial-box {
+        margin-bottom: 10%;
+    }
+    .section-3 {
+        padding: 4em 2em 4em 2em;
+        width: 100%;
+    }
+    .sign-up-box {
+        padding: 3em 0em 3em 0em;
+        margin-bottom: -86%;
+        border-radius: 0.50rem;
+    }
+    .sign-up-box h2 {
+        font-size: 1.30em;
+    }
+    .sign-up-box p {
+        padding: 1em;
+    }
+    form {
+        padding: 2em;
+    }
+    input {
+        padding: 1em;
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    .submit-button {
+        display: block;
+        width: 100%;
+        margin: 4% 0;
+    }
+    #main-footer {
+    padding: 20em 2em 0 2em;
+    }
+    .sub-footer {
+        flex-flow: column;
+    }
+    .logo-bottom-container {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left center;
+    }
+    .logo-bottom {
+        width: 55%;
+    }
+    .location {
+        width: 100%;
+    }
+    .info {
+        padding: 2em 0 3em 0;
+    }
+    .bottom-links-container-1, .bottom-links-container-2 {
+        padding-bottom: 3em;
+    }
+    .social-media-row {
+        width: 70%;
+        margin: 10% auto 0 auto;
+        justify-content: space-evenly;
+    }
+}
