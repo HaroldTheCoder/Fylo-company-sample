@@ -156,9 +156,6 @@ p, a,span {
     opacity: 1;
     color: hsl(0, 0%, 100%);
 }
-.arrow-img {
-   
-}
 .testimonial-section {
     padding: 4em;
 }
@@ -329,6 +326,8 @@ input {
     }
     #main-header {
         padding: 2em;
+        background: url(images/bg-curvy-mobile.svg) no-repeat bottom center;
+        background-size: 100vw;
     }
     .header-content {
         width: 100%;
