@@ -44,6 +44,7 @@ p, a, span {
 .sing-in-link:hover {
     text-decoration: none;
     background-image: linear-gradient(to right, hsl(184, 49%, 70%), hsl(184, 49%, 70%));
+    color: hsl(219, 30%, 18%);
 }
 #main-header {
     padding: 2em 10em 15em 10em;
